@@ -14,6 +14,8 @@ public class HelloController {
 
     @GetMapping("/helloWorld")
     public String helloWorld() {
-        return "Greetings from Spring Boot!";
+        return "Hello from Spring Boot!";
     }
+
+
 }

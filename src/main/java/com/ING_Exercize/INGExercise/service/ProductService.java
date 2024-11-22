@@ -35,6 +35,9 @@ public class ProductService {
 
     public ProductResponse changeProductPrice(ProductResponse productResponse) {
 
+        if (productResponse.price().intValue() <0 ){
+            throw new CustomExceptionProduct("Can't update the product with negative value ");
+        }
         Product product = repository.findByName(productResponse.name())
                 .orElseThrow(() -> new CustomExceptionProduct("Product Not found !!!"));
 

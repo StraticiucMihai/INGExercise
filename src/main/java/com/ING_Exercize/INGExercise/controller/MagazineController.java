@@ -23,8 +23,8 @@ public class MagazineController {
 
     @PostMapping("/addProduct")
     @Secured("ROLE_ADMIN")
-    public Product addProduct(@RequestBody ProductResponse product) {
-        return service.addProduct(product);
+    public ResponseEntity<ProductResponse> addProduct(@RequestBody ProductResponse product) {
+        return ResponseEntity.status(HttpStatus.OK).body(service.addProduct(product));
     }
 
     @GetMapping("/findById/{id}")

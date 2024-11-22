@@ -21,8 +21,8 @@ public class ProductService {
         this.repository = repository;
     }
 
-    public Product addProduct(ProductResponse product) {
-        return repository.save(mapProductResponse(product));
+    public ProductResponse addProduct(ProductResponse product) {
+        return mapToProductResponse(repository.save(mapProductResponse(product)));
     }
 
     public ProductResponse findProduct(Long id){

@@ -1,7 +1,6 @@
 package com.ING_Exercize.INGExercise.controller;
 
 import com.ING_Exercize.INGExercise.dto.ProductResponse;
-import com.ING_Exercize.INGExercise.model.Product;
 import com.ING_Exercize.INGExercise.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;

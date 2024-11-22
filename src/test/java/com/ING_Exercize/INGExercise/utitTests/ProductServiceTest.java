@@ -6,7 +6,6 @@ import com.ING_Exercize.INGExercise.model.Product;
 import com.ING_Exercize.INGExercise.repository.ProductRepository;
 import com.ING_Exercize.INGExercise.service.ProductService;
 import org.junit.jupiter.api.AfterAll;
-import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.InjectMocks;
